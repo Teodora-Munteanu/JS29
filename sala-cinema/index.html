@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala cinema</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="movie-container">
+        
+            <label> Selecteaza film:</label>
+            <select id="movie">
+            <option value="30">2D DUNGEONS & DRAGONS: FRATIA HOTILOR (30 lei)</option>
+            <option value="35">3D SUPER MARIO BROS: FILMUL 3D (35 lei)</option>
+            <option value="30">2D GARDIENII GALAXIEI VOL. 3 (30 lei)</option>
+            <option value="40"> VIP 2D JOHN WICK:CAPITOLUL 4 (40 lei)</option>
+            </select>
+        
+        <button id = 'sala-noua' class="schimba-sala">Schimba sala</button>
+    </div>
+      <ul class="showcase">
+        <li>
+          <div class="seat"></div>
+          <small>Disponibil</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selectat</small>
+        </li>
+        <li>
+          <div class="seat sold"></div>
+          <small>Vandut</small>
+        </li>
+      </ul>
+    <div id="sala" class="sala-cinema">
+        <div class="screen"></div>
+        <table id = 'cinema-table' class = 'cinema-table-class'>
+
+        </table>
+        <p class="text">
+            Ai selectat <span id="count">0</span> locuri pentru pretul total de: <span
+              id="total"
+              >0</span
+            > lei
+          </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
